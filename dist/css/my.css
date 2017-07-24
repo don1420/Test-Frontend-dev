@@ -73,7 +73,7 @@ section {
     line-height: 30px;
     padding-left: 15px;
     padding-right: 15px; }
-  .search .btn {
+  .search button {
     display: inline-block;
     max-width: 75px;
     max-height: 33px;
@@ -84,7 +84,7 @@ section {
     background-color: #0049b0;
     -webkit-border-radius: 3px;
             border-radius: 3px; }
-    .search .btn span {
+    .search button span {
       font-size: 18px;
       color: #fff; }
 
@@ -279,36 +279,14 @@ section {
   margin: 0 auto;
   margin-top: 28px; }
 
-.buttons .btn {
+.buttons button {
   font-family: MontserratRegular, sans-serif;
   font-size: 14px;
   line-height: 42px;
   padding: 0 21px;
-  color: #fff;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  text-transform: uppercase;
-  border: none; }
-
-.buttons .btn-primary {
-  background-color: #0049b0; }
-
-.buttons .btn-default {
-  background-color: #fff;
-  color: #0049b0;
-  border: 1px solid #0049b0; }
-
-.buttons .btn-success {
-  background-color: #34bf49; }
-
-.buttons .btn-info {
-  background-color: #6dcff6; }
-
-.buttons .btn-warning {
-  background-color: #f49a9e; }
-
-.buttons .btn-danger {
-  background-color: #ed1c24; }
+  text-transform: uppercase; }
 
 /*-------------------------Section inputs--------------------------*/
 .inputs .outer-wrap {
@@ -839,10 +817,10 @@ footer {
   .buttons .wrap {
     display: inline-block;
     padding: 0	15px; }
-    .buttons .wrap .btn {
+    .buttons .wrap button {
       margin-right: 20px;
       margin-bottom: 20px; }
-    .buttons .wrap .btn:last-child {
+    .buttons .wrap button:last-child {
       margin-right: 0; }
   .header .search {
     display: none;

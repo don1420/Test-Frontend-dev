@@ -21,7 +21,6 @@ gulp.task('sass', function () {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-			//'app/libs/jquery/dist/jquery.min.js',
 			'app/libs/bootstrap-sass/assets/javascripts/bootstrap.min.js',
 			'app/libs/owl.carousel/dist/owl.carousel.min.js'
 		])
@@ -79,6 +78,7 @@ gulp.task('img', function() {
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'html_5'], function () {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
+	gulp.watch('app/libs/bootstrap-sass/assets/stylesheets/**/*.scss', ['css-libs', browserSync.reload]);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/js/*.js', browserSync.reload);
 });
