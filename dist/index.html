@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+	<title>Frontend Developer (FE_M1.x_0.9)</title>
+	<link rel="stylesheet" type="text/css" href="css/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/my.css">
+
+</head>
+<body>
+
+	<header id="top-header">
+
+		<div class="container">
+			<div class="header clearfix">
+			<div class="buttons-wrap">
+					<button class="toggle_menu hidden-md hidden-lg">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+
+					<div class="logo"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+
+					<button class="search-button hidden-sm hidden-md hidden-lg">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</div>
+				<div class="search">
+					<input type="text" placeholder="Search" name="search">
+					<button class="btn"><span class="glyphicon glyphicon-search"></span></button>
+				</div>
+
+			</div>
+		</div>
+		
+		<nav class="top-nav grey" id="top-nav">
+			<div class="container">
+				<ul class="flex-container">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">Servises</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Gallery</a></li>
+					<li><a href="#">Help & FAQ</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+
+	<div class="main-content">
+		<section class="buttons">
+			<div class="container">
+				<h2>Buttons</h2>
+			</div>
+			<div class="wrap">
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-default">Default</button>
+				<button class="btn btn-success">Success</button>
+				<button class="btn btn-info">Info</button>
+				<button class="btn btn-warning">Warning</button>
+				<button class="btn btn-danger">Danger</button>
+			</div>
+		</section>
+
+		<section class="inputs">
+			<div class="container">
+				<h2>Inputs</h2>
+
+				<div class="outer-wrap">
+					<div class="wrap">
+						<label for="checkbox1">
+							<input class="custom-checkbox" type="checkbox" id="checkbox1" checked name="checkbox-active">
+							<span>Checkbox Active</span>
+						</label>
+
+						<label for="checkbox2">
+							<input class="custom-checkbox" type="checkbox" id="checkbox2" name="checkbox-active">
+							<span>Checkbox</span>
+						</label>
+					</div>
+
+					<div class="wrap">
+						<label for="radio1">
+							<input class="custom-radio" type="radio" checked id="radio1" name="radio-active">
+							<span>Radio Active</span>
+						</label>
+
+						<label for="radio2">
+							<input class="custom-radio" type="radio" id="radio2" name="radio-active">
+							<span>Radio</span>
+						</label>
+					</div>
+
+					<div class="wrap">
+						<label for="switch1" class="switch">
+							<input type="checkbox" id="switch1" checked>
+							<span class="slider round"></span>
+							<span>Switcher ON</span>
+						</label>
+
+						<label for="switch2" class="switch">
+							<input type="checkbox" id="switch2">
+							<span class="slider round"></span>
+							<span>Switcher OFF</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rating">
+			<div class="container">
+				<h2>Star rating</h2>
+				<div class="wrap">
+					<form id="showRating">
+						<div class="stars">
+							<input type="radio" name="star" class="star-1" disabled
+							id="star-1" />
+							<label class="star-1" for="star-1">1</label>
+							<input type="radio" name="star" class="star-2" disabled
+							id="star-2" />
+							<label class="star-2" for="star-2">2</label>
+							<input type="radio" name="star" class="star-3" disabled
+							id="star-3" />
+							<label class="star-3" for="star-3">3</label>
+							<input type="radio" name="star" class="star-4" disabled
+							id="star-4" />
+							<label class="star-4" for="star-4">4</label>
+							<input type="radio" name="star" class="star-5" disabled
+							id="star-5" />
+							<label class="star-5" for="star-5">5</label>
+							<span></span>
+						</div>
+						<span>Show rating</span>
+					</form>
+
+					<form id="checkRating">
+						<div class="stars">
+							<input type="radio" name="star" class="star-1" id="star-11" />
+							<label class="star-1" for="star-11">1</label>
+							<input type="radio" name="star" class="star-2" id="star-22" />
+							<label class="star-2" for="star-22">2</label>
+							<input type="radio" name="star" class="star-3" id="star-33" checked
+							/>
+							<label class="star-3" for="star-33">3</label>
+							<input type="radio" name="star" class="star-4" id="star-44" />
+							<label class="star-4" for="star-44">4</label>
+							<input type="radio" name="star" class="star-5" id="star-55" />
+							<label class="star-5" for="star-55">5</label>
+							<span></span>
+						</div>
+						<span>Check rating</span>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="star-wars-slider clearfix">
+			<div class="container">
+				<h2>Carousel</h2>
+				<div class="owl-carousel">
+
+					<div class="slide-block clearfix">
+						<div class="wrap">
+						<div class="border-wrap"></div>
+							<div class="photo">
+								<img src="img/Chewbacca.jpg" alt="Chewbacca">
+							</div>
+							<div class="description-wrap">
+								<p class="description">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+								<p class="name">Chewbacca</p>
+								<p class="date">July 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide-block clearfix">
+						<div class="wrap">
+							<div class="border-wrap"></div>
+							<div class="photo">
+								<img src="img/dart.jpg" alt="dart">
+							</div>
+							<div class="description-wrap">
+								<p class="description">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+								<p class="name">Dart</p>
+								<p class="date">July 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide-block clearfix">
+						<div class="wrap">
+							<div class="border-wrap"></div>
+							<div class="photo">
+								<img src="img/yoda.jpg" alt="yoda">
+							</div>
+							<div class="description-wrap">
+								<p class="description">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+								<p class="name">Yoda</p>
+								<p class="date">July 2017</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="slide-block clearfix">
+						<div class="wrap">
+							<div class="border-wrap"></div>
+							<div class="photo">
+								<img src="img/r2d2.jpg" alt="r2-d2">
+							</div>
+							<div class="description-wrap">
+								<p class="description">When I started, I weighed over 425 pounds. What matters is that you take the steps and focus on making one good choice at a time.</p>
+								<p class="name">R2-D2</p>
+								<p class="date">July 2017</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			</section>
+
+		<div id="map"></div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12 col-sm-12 col-md-3 col-md-push-9">
+					<nav class="follow-us">
+						<ul>
+							<li><h3>Follow us</h3></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+							<li><a href="#"></a></li>
+						</ul>
+					</nav>
+				</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-3 col-md-pull-3">
+						<nav class="accordion">
+							<ul>
+								<li><h3 class="h3-bg2">Shop</h3></li>
+								<li><a href="#">Browse By Holidays</a></li>
+								<li><a href="#">Browse By Brand</a></li>
+								<li><a href="#">Gift of the Month Clubs</a></li>
+								<li><a href="#">Customized Bottles</a></li>
+								<li><a href="#">Customized Bottles</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-3 col-md-pull-3">
+						<nav class="accordion">
+							<ul>
+								<li><h3 class="h3-bg2">About</h3></li>
+								<li><a href="#">About Spirited Gifts</a></li>
+								<li><a href="#">Read our Blog</a></li>
+								<li><a href="#">About our Selection</a></li>
+								<li><a href="#">Read our Reviews</a></li>
+								<li><a href="#">Shipping & Returns</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="col-xs-12 col-sm-4 col-md-3 col-md-pull-3">
+						<nav class="accordion">
+							<ul>
+								<li><h3 class="h3-bg2">More</h3></li>
+								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Retailer Network</a></li>
+								<li><a href="#">Help and FAQs</a></li>
+								<li><a href="#">Scholarship</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div>
+
+			</div>
+		</div>
+	</footer>
+
+
+	<!--[if lt IE 9]>
+	<script src="js/html_5.min.js"></script>
+	<![endif]-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/libs.min.js"></script>
+
+	<!--Google maps-->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCI3oHr03n-pDSm0CunlC7NEPzJc1pBkxE&language=en&callback=initMap">
+	 </script>
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>
